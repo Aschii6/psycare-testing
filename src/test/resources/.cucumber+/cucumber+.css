@@ -1,0 +1,30 @@
+.stepKeyword { color: green; }
+
+* { font-size: 14px; margin: 0 0 0 0 }
+p { margin: 0 }
+
+table { margin-top: 10px; margin-left: 10px; margin-right: 10px; max-width: 100%; }
+table, th, td {
+    font-size: 12px;
+    vertical-align: top;
+    border-collapse: collapse;
+}
+th, td { padding: 5px; white-space: break-spaces; border: 1px solid midnightblue;}
+th { color: chocolate }
+
+div { display: inline-block; }
+
+.feature { margin-left: 5px; }
+.featureTitle { font-size: 20px; margin-bottom: 8px; }
+.featureHeader { margin-left: 5px; }
+
+.rule { margin-left: 8px; }
+.ruleTitle { font-size: 20px; margin-bottom: 8px; }
+
+.scenario { margin-left: 15px; }
+.scenarioTitle { font-size: 18px; border-bottom: 8px;  }
+
+.step { margin-left: 16px; }
+.stepParameter { color: black; font-weight: normal }
+
+.examples { margin-left: 16px; }
