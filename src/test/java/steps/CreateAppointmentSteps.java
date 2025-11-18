@@ -2,6 +2,8 @@ package steps;
 
 import io.cucumber.java.en.*;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.Optional;
 
 public class CreateAppointmentSteps {
@@ -36,7 +38,7 @@ public class CreateAppointmentSteps {
         IO.println("The appointment has been successfully created");
         appointmentCreated.ifPresent(
             created -> {
-                assert created : "Appointment should be created successfully";
+                assertThat(created).isTrue();
             }
         );
     }
@@ -51,7 +53,7 @@ public class CreateAppointmentSteps {
         IO.println("The appointment has NOT been created");
         appointmentCreated.ifPresent(
             created -> {
-                assert !created : "Appointment should NOT be created";
+                assertThat(created).isFalse();
             }
         );
     }

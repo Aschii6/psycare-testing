@@ -5,6 +5,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class LoginSteps {
     boolean credentialsCorrect;
 
@@ -29,9 +31,9 @@ public class LoginSteps {
     public void login_result(String success_status) {
         IO.println("Login result should be: " + success_status);
         if (credentialsCorrect) {
-            assert success_status.equals("successful") : "Login should be successful";
+            assertThat(success_status).isEqualTo("successful");
         } else {
-            assert success_status.equals("unsuccessful") : "Login should be unsuccessful";
+            assertThat(success_status).isEqualTo("unsuccessful");
         }
     }
 }
