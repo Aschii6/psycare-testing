@@ -4,8 +4,6 @@ import io.cucumber.java.en.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.util.Optional;
-
 public class CreateAppointmentSteps {
     boolean detailsCompleted;
     boolean appointmentCreated;
