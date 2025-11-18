@@ -14,3 +14,4 @@ Feature: User Login
       | email                       | password           | success_status |
       | correct_email@example.com   | correct_password   | successful     |
       | incorrect_email@example.com | incorrect_password | unsuccessful   |
+      | correct_email@example.com   | incorrect_password | unsuccessful   |
