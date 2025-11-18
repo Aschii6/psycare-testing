@@ -1,7 +1,7 @@
 .stepKeyword { color: green; }
 
 * { font-size: 14px; margin: -6px 0 }
-p { margin: -6px 0 }
+p { margin: -6px 0; color: #282828 }
 
 table { margin-top: 8px; margin-left: 8px; margin-right: 8px; max-width: 100%; }
 table, th, td {
