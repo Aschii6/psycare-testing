@@ -7,6 +7,6 @@ Feature: Session Payment Management
   Scenario: Session Payment Creation
     Given there exists at least a session
     And the psychologist completes the relevant data for a new session payment
-    When they create the session
+    When they try to create the session payment
     Then the session payment gets created
     And the session payment is linked to the session
