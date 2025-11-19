@@ -22,4 +22,13 @@
             </p>
         </div>
     </td></tr>
+
+    <tr><td style="border:0; text-align:center; vertical-align:bottom;">
+        <div style="margin:0 auto;">
+            <p style="margin:0; font-size:24px;">
+                Source code available at:
+                <a href="${frontpage.sourceUrl}">${frontpage.sourceUrl}</a>
+            </p>
+        </div>
+    </td></tr>
 </table>
