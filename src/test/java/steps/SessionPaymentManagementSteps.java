@@ -16,8 +16,8 @@ public class SessionPaymentManagementSteps {
         IO.println("Psychologist completes the relevant data for a new session payment");
     }
 
-    @When("they create the session")
-    public void psychologist_creates_session() {
+    @When("they try to create the session payment")
+    public void psychologist_creates_session_payment() {
         IO.println("Psychologist creates the session");
     }
 
