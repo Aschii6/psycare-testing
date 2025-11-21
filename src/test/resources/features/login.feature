@@ -6,9 +6,12 @@ Feature: User Login
   so that I can access my account securely.
 
   Scenario Outline: User Login
-    Given the user has filled in the email
-    And the user has filled in the password
-    When they try to login with "<email>" and "<password>"
+    Given the account database is
+      | email                     | password         |
+      | correct_email@example.com | correct_password |
+    And the user has filled in the email with "<email>"
+    And the user has filled in the password with "<password>"
+    When they try to login
     Then the login is "<success_status>"
     Examples:
       | email                       | password           | success_status |

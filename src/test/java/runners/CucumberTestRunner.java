@@ -7,6 +7,6 @@ import org.junit.platform.suite.api.*;
 @SelectPackages("features")
 @ConfigurationParameter(key = "cucumber.glue", value = "steps, hooks")
 @ConfigurationParameter(key = "cucumber.plugin", value = "pretty, html:target/cucumber-reports.html")
-//@ConfigurationParameter(key = "cucumber.filter.tags", value = "@FR-006") // Run specific feature by tag
+//@ConfigurationParameter(key = "cucumber.filter.tags", value = "@FR-002") // Run specific feature by tag
 public class CucumberTestRunner {
 }
